@@ -244,6 +244,7 @@ h3 {
 }
 
 .project-copy > p:not(.project-number) { color: var(--muted); }
+.project-links { display: flex; flex-wrap: wrap; gap: 8px 22px; }
 .project-copy a {
   margin-top: 9px;
   color: var(--blue-dark);
