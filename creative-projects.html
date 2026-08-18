@@ -16,8 +16,8 @@
     .media-panel, .info-panel { overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 14px 40px rgba(30,41,51,.08); }
     .media-panel video, .media-panel img { width: 100%; min-height: 430px; display: block; object-fit: cover; background: #101820; }
     .slider { position: relative; background: #101820; }
-    .slide { display: none; }
-    .slide.active { display: block; animation: fade-in .45s ease; }
+    .slider-track { display: flex; transition: transform .65s cubic-bezier(.22,.61,.36,1); }
+    .media-panel .slider-track .slide { flex: 0 0 100%; width: 100%; }
     .slider-button {
       position: absolute; top: 50%; z-index: 2; width: 42px; height: 42px;
       border: 0; border-radius: 50%; color: #fff; background: rgba(17,24,32,.72);
@@ -29,7 +29,6 @@
     .slider-dots { position: absolute; z-index: 2; right: 0; bottom: 16px; left: 0; display: flex; justify-content: center; gap: 8px; }
     .slider-dot { width: 10px; height: 10px; padding: 0; border: 0; border-radius: 50%; background: rgba(255,255,255,.55); cursor: pointer; }
     .slider-dot.active { background: var(--blue); transform: scale(1.15); }
-    @keyframes fade-in { from { opacity: .45; } to { opacity: 1; } }
     .info-panel { padding: 30px; }
     .info-panel h2 { font-size: 1.65rem; }
     .project-facts { margin: 0 0 28px; padding: 0; list-style: none; }
@@ -91,9 +90,11 @@
 
       <section class="detail-project" aria-labelledby="creative-title">
         <div class="media-panel slider" aria-label="Drone project photo gallery">
-          <img class="slide active" src="https://raw.githubusercontent.com/abditechh/iPortfolio-Abdi-s/main/dji_fly_20240420_170010_0012_1713632846138_photo.JPG" alt="Abdi and friends preparing their drones outdoors">
-          <img class="slide" src="https://raw.githubusercontent.com/abditechh/iPortfolio-Abdi-s/main/dji_fly_20240420_170008_0011_1713632847430_photo.JPG" alt="Abdi operating a drone beside parked cars">
-          <img class="slide" src="assets/drone-project.jpg" alt="Small drone flying above a rocky landscape">
+          <div class="slider-track">
+            <img class="slide" src="https://raw.githubusercontent.com/abditechh/iPortfolio-Abdi-s/main/dji_fly_20240420_170010_0012_1713632846138_photo.JPG" alt="Abdi and friends preparing their drones outdoors">
+            <img class="slide" src="https://raw.githubusercontent.com/abditechh/iPortfolio-Abdi-s/main/dji_fly_20240420_170008_0011_1713632847430_photo.JPG" alt="Abdi operating a drone beside parked cars">
+            <img class="slide" src="assets/drone-project.jpg" alt="Small drone flying above a rocky landscape">
+          </div>
           <button class="slider-button prev" type="button" aria-label="Previous photo">‹</button>
           <button class="slider-button next" type="button" aria-label="Next photo">›</button>
           <div class="slider-dots" aria-label="Choose a photo">
@@ -163,12 +164,13 @@
     const slides = [...document.querySelectorAll('.slide')];
     const dots = [...document.querySelectorAll('.slider-dot')];
     const slider = document.querySelector('.slider');
+    const sliderTrack = document.querySelector('.slider-track');
     let currentSlide = 0;
     let slideTimer;
 
     function showSlide(index) {
       currentSlide = (index + slides.length) % slides.length;
-      slides.forEach((slide, position) => slide.classList.toggle('active', position === currentSlide));
+      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
       dots.forEach((dot, position) => dot.classList.toggle('active', position === currentSlide));
     }
 
