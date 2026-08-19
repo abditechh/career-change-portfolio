@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software QA Learning Portfolio · Abdi</title>
+  <meta name="description" content="Abdi's beginner software-testing practice using a Firebase Job Application Tracker.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .qa-page { min-height: 100vh; padding: 54px 0 90px; }
+    .qa-shell { width: min(calc(100% - 40px), 1120px); margin: 0 auto; }
+    .qa-header { margin-bottom: 34px; display: flex; justify-content: space-between; gap: 24px; align-items: start; }
+    .qa-header h1 { max-width: 780px; margin-bottom: 18px; font-size: clamp(2.7rem, 6vw, 5rem); }
+    .qa-intro { max-width: 720px; color: var(--muted); font-size: 1.08rem; }
+    .back-link { color: var(--blue-dark); font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .beginner-note { margin: 0 0 36px; padding: 18px 20px; border-left: 4px solid var(--blue); border-radius: 0 10px 10px 0; background: #eaf6fc; }
+    .qa-overview { margin-bottom: 28px; display: grid; grid-template-columns: 1.2fr .8fr; gap: 24px; }
+    .qa-panel { padding: 30px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 12px 34px rgba(30,41,51,.06); }
+    .qa-panel h2 { font-size: 1.7rem; }
+    .qa-panel > p { color: var(--muted); }
+    .function-list, .skill-grid { margin: 0; padding: 0; list-style: none; }
+    .function-list { display: grid; gap: 10px; }
+    .function-list li { padding: 10px 12px; border-radius: 8px; background: var(--background); }
+    .function-list li::before { margin-right: 9px; color: var(--blue-dark); content: '✓'; font-weight: 800; }
+    .skill-grid { display: flex; flex-wrap: wrap; gap: 9px; }
+    .skill-grid li { padding: 7px 11px; border: 1px solid var(--line); border-radius: 999px; font-size: .84rem; }
+    .qa-actions { margin-top: 24px; display: flex; flex-wrap: wrap; gap: 10px; }
+    .work-title { margin: 72px 0 28px; }
+    .document-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+    .document-card { padding: 26px; border: 1px solid var(--line); border-radius: 14px; background: #fff; transition: transform .2s ease, box-shadow .2s ease; }
+    .document-card:hover { transform: translateY(-3px); box-shadow: 0 16px 36px rgba(30,41,51,.09); }
+    .document-icon { width: 44px; height: 44px; margin-bottom: 20px; display: grid; place-items: center; border-radius: 10px; color: #fff; background: var(--dark); font-size: 1.25rem; }
+    .document-card h3 { margin-bottom: 8px; font-size: 1.3rem; }
+    .document-card p { color: var(--muted); }
+    .document-card a { color: var(--blue-dark); font-weight: 700; text-decoration: none; }
+    .next-step { margin-top: 28px; padding: 28px; display: flex; justify-content: space-between; gap: 28px; align-items: center; border-radius: 14px; color: #fff; background: var(--dark); }
+    .next-step h2 { margin-bottom: 6px; font-size: 1.6rem; }
+    .next-step p { margin-bottom: 0; color: #aeb8c1; }
+    .next-step .button { flex: none; }
+    @media (max-width: 760px) {
+      .qa-header, .next-step { flex-direction: column; }
+      .qa-overview, .document-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="qa-page">
+    <div class="qa-shell">
+      <header class="qa-header">
+        <div>
+          <p class="kicker">Main learning project</p>
+          <h1>Learning to test software carefully.</h1>
+          <p class="qa-intro">I use my own Job Application Tracker to practise test cases, exploratory testing and clear bug reporting.</p>
+        </div>
+        <a class="back-link" href="../index.html#projects">← Back to my portfolio</a>
+      </header>
+
+      <p class="beginner-note"><strong>Where I am now:</strong> This is learning work, not professional QA experience. I am showing the process honestly and improving it as I learn.</p>
+
+      <section class="qa-overview">
+        <article class="qa-panel">
+          <p class="kicker">System under test</p>
+          <h2>Trackly Job Application Tracker</h2>
+          <p>A small Firebase web application with private user accounts and cloud-stored application records.</p>
+          <ul class="function-list">
+            <li>Create an account, log in and log out</li>
+            <li>Add, edit and delete applications</li>
+            <li>Search and filter saved records</li>
+            <li>Track status and export CSV data</li>
+          </ul>
+          <div class="qa-actions">
+            <a class="button primary" href="https://abditechh.github.io/job-application-tracker/" target="_blank" rel="noreferrer">Open the app ↗</a>
+            <a class="button quiet" href="https://github.com/abditechh/job-application-tracker" target="_blank" rel="noreferrer">View its code ↗</a>
+          </div>
+        </article>
+
+        <article class="qa-panel">
+          <p class="kicker">Skills I am practising</p>
+          <h2>My current focus</h2>
+          <ul class="skill-grid">
+            <li>Test cases</li><li>Positive testing</li><li>Negative testing</li>
+            <li>Boundary checks</li><li>Authentication</li><li>CRUD testing</li>
+            <li>Responsive checks</li><li>Bug reporting</li><li>Regression</li>
+          </ul>
+        </article>
+      </section>
+
+      <div class="work-title">
+        <p class="kicker">Practice documents</p>
+        <h2>What I am building</h2>
+        <p>Simple working documents that help me practise the basic QA process.</p>
+      </div>
+
+      <section class="document-grid" aria-label="QA practice documents">
+        <article class="document-card">
+          <div class="document-icon" aria-hidden="true">✓</div>
+          <h3>Job Tracker test cases</h3>
+          <p>Beginner test scenarios covering login, application records, validation and expected outcomes.</p>
+          <a href="https://github.com/abditechh/career-change-portfolio/blob/main/qa-portfolio/test-cases/job-tracker-test-cases.md" target="_blank" rel="noreferrer">Read the test cases ↗</a>
+        </article>
+        <article class="document-card">
+          <div class="document-icon" aria-hidden="true">!</div>
+          <h3>Bug-report template</h3>
+          <p>A repeatable structure for writing steps, expected results, actual results and supporting details.</p>
+          <a href="https://github.com/abditechh/career-change-portfolio/blob/main/qa-portfolio/bug-reports/bug-report-template.md" target="_blank" rel="noreferrer">Open the template ↗</a>
+        </article>
+        <article class="document-card">
+          <div class="document-icon" aria-hidden="true">⌕</div>
+          <h3>Exploratory session</h3>
+          <p>A lightweight session template for setting a charter, recording observations and noting risks.</p>
+          <a href="https://github.com/abditechh/career-change-portfolio/blob/main/qa-portfolio/exploratory-testing/session-template.md" target="_blank" rel="noreferrer">Open the session template ↗</a>
+        </article>
+        <article class="document-card">
+          <div class="document-icon" aria-hidden="true">i</div>
+          <h3>QA fundamentals</h3>
+          <p>My plain-language learning notes about testing principles and common testing activities.</p>
+          <a href="https://github.com/abditechh/career-change-portfolio/blob/main/qa-portfolio/learning-notes/qa-fundamentals.md" target="_blank" rel="noreferrer">Read my notes ↗</a>
+        </article>
+      </section>
+
+      <section class="next-step">
+        <div>
+          <h2>This portfolio will grow with me.</h2>
+          <p>Next I will add completed test runs, real findings and clearer regression coverage.</p>
+        </div>
+        <a class="button primary" href="../index.html#contact">Contact me</a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
