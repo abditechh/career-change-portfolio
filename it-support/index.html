@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IT Support Learning Portfolio · Abdi</title>
+  <meta name="description" content="Abdi's IT support learning journey through the Google IT Support course on Coursera.">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .learning-page { min-height: 100vh; padding: 54px 0 90px; }
+    .learning-shell { width: min(calc(100% - 40px), 1080px); margin: 0 auto; }
+    .learning-header { margin-bottom: 34px; display: flex; justify-content: space-between; gap: 28px; align-items: start; }
+    .learning-header h1 { max-width: 760px; margin-bottom: 18px; font-size: clamp(2.7rem, 6vw, 5rem); }
+    .learning-intro { max-width: 720px; color: var(--muted); font-size: 1.08rem; }
+    .back-link { color: var(--blue-dark); font-weight: 700; text-decoration: none; white-space: nowrap; }
+    .course-note { margin-bottom: 30px; padding: 22px; border-left: 4px solid var(--blue); border-radius: 0 12px 12px 0; background: #eaf6fc; }
+    .course-note p { margin-bottom: 0; }
+    .learning-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 20px; }
+    .learning-card { padding: 28px; border: 1px solid var(--line); border-radius: 14px; background: #fff; box-shadow: 0 12px 34px rgba(30,41,51,.06); }
+    .learning-icon { width: 46px; height: 46px; margin-bottom: 20px; display: grid; place-items: center; border-radius: 11px; color: #fff; background: var(--dark); font-size: 1.3rem; }
+    .learning-card h2 { margin-bottom: 10px; font-size: 1.45rem; }
+    .learning-card p { margin-bottom: 0; color: var(--muted); }
+    .goal-panel { margin-top: 26px; padding: 32px; display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; border-radius: 14px; color: #fff; background: var(--dark); }
+    .goal-panel h2 { margin-bottom: 8px; font-size: 1.7rem; }
+    .goal-panel p { margin-bottom: 0; color: #aeb8c1; }
+    @media (max-width: 720px) {
+      .learning-header, .goal-panel { grid-template-columns: 1fr; flex-direction: column; }
+      .learning-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="learning-page">
+    <div class="learning-shell">
+      <header class="learning-header">
+        <div>
+          <p class="kicker">My main direction</p>
+          <h1>Building my way into IT support.</h1>
+          <p class="learning-intro">I have decided to focus on IT support because it gives me the chance to enter an IT department, help users and learn how real systems are supported every day.</p>
+        </div>
+        <a class="back-link" href="../index.html#projects">← Back to my portfolio</a>
+      </header>
+
+      <section class="course-note">
+        <strong>What I am doing now:</strong>
+        <p>I have enrolled in the Google IT Support course on Coursera. I am studying after my full-time job and building my knowledge step by step.</p>
+      </section>
+
+      <section class="learning-grid" aria-label="IT support learning areas">
+        <article class="learning-card">
+          <div class="learning-icon" aria-hidden="true">PC</div>
+          <h2>Computer hardware</h2>
+          <p>Learning the main computer parts, how they work together and how to recognise common hardware problems.</p>
+        </article>
+        <article class="learning-card">
+          <div class="learning-icon" aria-hidden="true">OS</div>
+          <h2>Operating systems</h2>
+          <p>Building confidence with Windows, files, user accounts, software installation and basic system settings.</p>
+        </article>
+        <article class="learning-card">
+          <div class="learning-icon" aria-hidden="true">NET</div>
+          <h2>Networking basics</h2>
+          <p>Learning about IP addresses, Wi-Fi, routers, DNS and the basic checks used when a connection is not working.</p>
+        </article>
+        <article class="learning-card">
+          <div class="learning-icon" aria-hidden="true">?</div>
+          <h2>Troubleshooting</h2>
+          <p>Practising how to ask the right questions, check the problem carefully and work through possible solutions in a clear order.</p>
+        </article>
+        <article class="learning-card">
+          <div class="learning-icon" aria-hidden="true">USR</div>
+          <h2>User support</h2>
+          <p>Learning to explain technical steps in a simple way, stay patient and make sure the user feels supported.</p>
+        </article>
+        <article class="learning-card">
+          <div class="learning-icon" aria-hidden="true">SEC</div>
+          <h2>Security basics</h2>
+          <p>Learning about safe passwords, updates, access rights, phishing and the responsibility of protecting user information.</p>
+        </article>
+      </section>
+
+      <section class="goal-panel">
+        <div>
+          <h2>What I am looking for</h2>
+          <p>A trainee or junior IT support role where I can learn from the department, work with the team and improve through real daily tasks.</p>
+        </div>
+        <a class="button primary" href="../index.html#contact">Contact me</a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
