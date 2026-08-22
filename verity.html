@@ -1,74 +1,42 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Abdi Abdirashid's practical portfolio for the Manufacturing Technician role at Verity.">
-  <title>Abdi | Manufacturing Technician Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Abdi Abdirashid - Manufacturing Technician application portfolio.">
+  <title>Abdi | Manufacturing Technician</title><link rel="stylesheet" href="styles.css">
   <style>
-    .verity-hero{min-height:92vh}.verity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.evidence-card{padding:28px;border:1px solid var(--line);border-radius:14px;background:#fff}.evidence-card h3{font-size:1.25rem}.evidence-card p{margin-bottom:0;color:var(--muted)}.honest-note{margin-top:28px;padding:24px;border-left:4px solid var(--blue);background:#fff}.role-table{display:grid;gap:12px}.role-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:18px 0;border-bottom:1px solid var(--line)}.role-row strong{color:var(--ink)}.role-row span{color:var(--muted)}.drone-banner{padding:34px;border-radius:15px;color:#fff;background:var(--dark)}.drone-banner p{color:#bdc8d2}.back-link{margin-bottom:22px;display:inline-block;color:var(--blue-dark);font-weight:700;text-decoration:none}@media(max-width:700px){.verity-grid,.role-row{grid-template-columns:1fr}.role-row{gap:5px}}
+    .simple-hero{min-height:88vh}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{padding:28px;border:1px solid var(--line);border-radius:14px;background:#fff}.card h3{font-size:1.25rem}.card p{margin:0;color:var(--muted)}.drone-box{padding:34px;border-radius:15px;color:#fff;background:var(--dark)}.drone-box p{color:#bdc8d2}.facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.fact{padding:18px;border-left:3px solid var(--blue);background:#fff}.fact strong,.fact span{display:block}.fact span{color:var(--muted)}@media(max-width:760px){.cards,.facts{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <aside class="sidebar">
     <img class="profile-photo" src="https://raw.githubusercontent.com/abditechh/iPortfolio-Abdi-s/main/img.png" alt="Abdi Abdirashid">
-    <a class="logo" href="#home">Abdi</a>
-    <p class="sidebar-role">Production &amp; installation worker</p>
-    <nav aria-label="Page navigation">
-      <a href="#home">Home</a><a href="#match">My experience</a><a href="#drone">Drone interest</a><a href="#contact">Contact</a>
-    </nav>
+    <a class="logo" href="#home">Abdi</a><p class="sidebar-role">Production &amp; installation worker</p>
+    <nav aria-label="Page navigation"><a href="#home">Home</a><a href="#experience">Experience</a><a href="#drone">Drones</a><a href="#contact">Contact</a></nav>
     <a class="linkedin" href="https://www.linkedin.com/in/abdi-abdirashid-09aa81294/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
   </aside>
   <main>
-    <section class="hero verity-hero" id="home">
-      <div class="hero-content">
-        <a class="back-link" href="index.html">← Main portfolio</a>
-        <p class="kicker">Manufacturing Technician application</p>
-        <h1>I want to help build reliable drone systems.</h1>
-        <p class="hero-text">I bring hands-on experience from industrial production, installation and maintenance training. I work carefully, follow procedures and take quality and safety seriously. Verity connects this practical background with my real interest in drones and technology.</p>
-        <div class="buttons"><a class="button primary" href="#match">See my experience</a><a class="button quiet" href="mailto:abdi.abdirashid@email.com">Contact me</a></div>
-      </div>
-      <div class="hero-card">
-        <p class="small-label">What I bring</p>
-        <strong>Industrial production</strong><span>Currently working at Stooss AG</span><hr>
-        <strong>Installation experience</strong><span>Previous practical work at V-ZUG</span><hr>
-        <strong>Drone interest</strong><span>A1/A3 certified, A2 in progress</span>
+    <section class="hero simple-hero" id="home">
+      <div class="hero-content"><p class="kicker">Manufacturing Technician application</p><h1>Practical experience. Careful work. Ready to learn.</h1><p class="hero-text">I currently work in industrial production and have previous experience in installation, maintenance and manual work. I am interested in joining Verity because the role connects my practical background with my interest in drones.</p><a class="button primary" href="#experience">See my experience</a></div>
+      <div class="hero-card"><p class="small-label">At a glance</p><strong>Current role</strong><span>Production Employee at Stooss AG</span><hr><strong>Previous experience</strong><span>Installation work at V-ZUG</span><hr><strong>Drone qualification</strong><span>A1/A3 certified, A2 in progress</span></div>
+    </section>
+    <section class="section" id="experience">
+      <div class="section-title"><p class="kicker">Relevant experience</p><h2>What I can bring</h2></div>
+      <div class="cards">
+        <article class="card"><p class="project-number">Production</p><h3>Industrial work</h3><p>Experience handling parts and quality samples carefully while following workplace procedures.</p></article>
+        <article class="card"><p class="project-number">Installation</p><h3>Hands-on work</h3><p>Practical installation experience at V-ZUG, maintenance training and confidence using tools.</p></article>
+        <article class="card"><p class="project-number">Work style</p><h3>Reliable and accurate</h3><p>I learn new routines, respect safety requirements and work well independently or with a team.</p></article>
       </div>
     </section>
-
-    <section class="section" id="match">
-      <div class="section-title"><p class="kicker">My experience</p><h2>A practical foundation for Verity</h2><p>I am not presenting myself as a finished electronics specialist. I am showing the experience I can bring on day one and what I am ready to learn.</p></div>
-      <div class="verity-grid">
-        <article class="evidence-card"><p class="project-number">01 · Production</p><h3>Careful industrial work</h3><p>At Stooss AG, I work in industrial production and handle quality samples. This has strengthened my accuracy, consistency and respect for defined processes.</p></article>
-        <article class="evidence-card"><p class="project-number">02 · Installation</p><h3>Hands-on technical work</h3><p>My earlier installation work at V-ZUG and maintenance training taught me to use tools, follow instructions and complete practical tasks safely.</p></article>
-        <article class="evidence-card"><p class="project-number">03 · Adaptability</p><h3>Different teams and workplaces</h3><p>Temporary assignments, carpentry and transport work taught me to learn new routines quickly, stay reliable and support the wider team.</p></article>
-        <article class="evidence-card"><p class="project-number">04 · Learning</p><h3>Computer and troubleshooting skills</h3><p>I am completing the Google IT Support course alongside full-time work, improving my computer knowledge, structured troubleshooting and documentation.</p></article>
-      </div>
-      <div class="honest-note"><strong>About soldering:</strong> I do not yet have professional hand-soldering experience. I am ready to learn through-hole soldering correctly and practise until I can complete it safely and accurately.</div>
-    </section>
-
-    <section class="section" id="drone">
-      <div class="drone-banner"><p class="kicker">Personal technical interest</p><h2>Drones are more than a line on my CV.</h2><p>I hold the A1/A3 drone certificate and I am working toward A2. Flying drones made me curious about how complete systems are assembled, tested, maintained and improved. That is why the opportunity to help build Verity's indoor drones genuinely interests me.</p><a class="button primary" href="creative-projects.html">See my drone projects →</a></div>
-    </section>
-
     <section class="section">
-      <div class="section-title"><p class="kicker">Role match</p><h2>How my background connects</h2></div>
-      <div class="role-table">
-        <div class="role-row"><strong>Manual assembly and maintenance</strong><span>Practical installation, maintenance training, carpentry and tool use.</span></div>
-        <div class="role-row"><strong>Quality control and documentation</strong><span>Production quality samples, careful work and structured IT-support learning.</span></div>
-        <div class="role-row"><strong>Troubleshooting</strong><span>Calm, step-by-step problem solving and a willingness to ask when escalation is needed.</span></div>
-        <div class="role-row"><strong>Packing and inventory support</strong><span>Transport experience and careful handling of goods in practical workplaces.</span></div>
-        <div class="role-row"><strong>English and teamwork</strong><span>English-speaking, flexible and experienced working with different teams.</span></div>
+      <div class="section-title"><p class="kicker">Skills</p><h2>Relevant to the role</h2></div>
+      <div class="facts">
+        <div class="fact"><strong>Manual assembly</strong><span>Practical tool use and careful handling</span></div><div class="fact"><strong>Quality awareness</strong><span>Following specifications and checking work</span></div><div class="fact"><strong>Troubleshooting</strong><span>Calm, step-by-step problem solving</span></div><div class="fact"><strong>Packing and goods handling</strong><span>Experience from production and transport</span></div><div class="fact"><strong>Computer skills</strong><span>Comfortable learning digital systems</span></div><div class="fact"><strong>English</strong><span>Good written and spoken communication</span></div>
       </div>
     </section>
-
-    <section class="contact section" id="contact">
-      <p class="kicker">My goal</p><h2>Learn the process and contribute.</h2>
-      <p>I would value the opportunity to bring my practical experience into Verity's production team, learn from experienced colleagues and grow into the full responsibilities of the role.</p>
-      <a class="button primary" href="mailto:abdi.abdirashid@email.com">Contact me</a>
-    </section>
-    <footer><p>Abdi Abdirashid · Zürich area, Switzerland</p><p>Prepared for the Verity Manufacturing Technician application.</p></footer>
+    <section class="section" id="drone"><div class="drone-box"><p class="kicker">Drone interest</p><h2>I want to understand how complete drone systems are built.</h2><p>I hold the A1/A3 drone certificate and I am working toward A2. Flying drones made me interested in their assembly, testing and maintenance. I do not yet have professional hand-soldering experience, but I am ready to learn it correctly.</p></div></section>
+    <section class="contact section" id="contact"><p class="kicker">Contact</p><h2>Ready for the next step.</h2><p>I would be happy to discuss how my production and installation experience could support Verity's manufacturing team.</p><a class="button primary" href="mailto:abdi.abdirashid@email.com">Contact me</a></section>
+    <footer><p>Abdi Abdirashid · Zürich area, Switzerland</p><p>Manufacturing Technician application portfolio.</p></footer>
   </main>
 </body>
 </html>
