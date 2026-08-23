@@ -61,7 +61,7 @@
           <p class="kicker">About me · Outside work</p>
           <h1>Technology also follows me outdoors.</h1>
         </div>
-        <a class="back-link" href="index.html#about">← Back to my portfolio</a>
+        <a class="back-link" id="back-to-portfolio" href="index.html#about">← Back to my portfolio</a>
       </header>
 
       <section class="detail-project" aria-labelledby="drone-title">
@@ -162,6 +162,12 @@
     </div>
   </main>
   <script>
+    const backLink = document.getElementById('back-to-portfolio');
+    if (new URLSearchParams(window.location.search).get('from') === 'verity') {
+      backLink.href = 'verity.html#hobbies';
+      backLink.textContent = '← Back to my Verity portfolio';
+    }
+
     const slides = [...document.querySelectorAll('.slide')];
     const dots = [...document.querySelectorAll('.slider-dot')];
     const slider = document.querySelector('.slider');
